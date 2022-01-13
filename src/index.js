@@ -2,6 +2,7 @@ const { app, BrowserWindow } = require("electron");
 const path = require("path");
 const ElectronPreferences = require("electron-preferences");
 const AutoLaunch = require("auto-launch");
+const windowStateKeeper = require("electron-window-state");
 require("update-electron-app")();
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
