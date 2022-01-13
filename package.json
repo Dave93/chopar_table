@@ -1,7 +1,7 @@
 {
   "name": "tablo",
   "productName": "tablo",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "My Electron application description",
   "main": "src/index.js",
   "repository": {
@@ -52,6 +52,7 @@
     "auto-launch": "^5.0.5",
     "electron-preferences": "^2.5.0",
     "electron-squirrel-startup": "^1.0.0",
+    "electron-window-state": "^5.0.3",
     "update-electron-app": "^2.0.1"
   },
   "devDependencies": {

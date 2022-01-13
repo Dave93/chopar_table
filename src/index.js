@@ -71,10 +71,14 @@ const createWindow = () => {
     if (!isEnabled) autoLaunch.enable();
   });
 
+  let mainWindowState = windowStateKeeper();
+
   // Create the browser window.
   const mainWindow = new BrowserWindow({
-    width: 800,
-    height: 600,
+    x: mainWindowState.x,
+    y: mainWindowState.y,
+    width: mainWindowState.width,
+    height: mainWindowState.height,
     "accept-first-mouse": true,
     webPreferences: {
       preload: path.join(__dirname, "./preload.js"),
@@ -88,6 +92,8 @@ const createWindow = () => {
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools();
+
+  mainWindowState.manage(mainWindow);
 };
 
 // This method will be called when Electron has finished
