@@ -1,0 +1,120 @@
+@font-face {
+  font-family: "PFHandbookPro";
+  src: url(../fonts/PFHandbookPro-Black.ttf) format("truetype");
+}
+@font-face {
+  font-family: "PFHandbookPro BlackItalic";
+  src: url(../fonts/PFHandbookPro-BlackItalic.ttf) format("truetype");
+}
+@font-face {
+  font-family: "PFHandbookPro Bold";
+  src: url(../fonts/PFHandbookPro-Bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "PFHandbookPro BoldItalic";
+  src: url(../fonts/PFHandbookPro-BoldItalic.ttf) format("truetype");
+}
+@font-face {
+  font-family: "PFHandbookPro ExtraThin";
+  src: url(../fonts/PFHandbookPro-ExtraThin.ttf) format("truetype");
+}
+@font-face {
+  font-family: "PFHandbookPro ExtraThinItal";
+  src: url(../fonts/PFHandbookPro-ExtraThinItal.ttf) format("truetype");
+}
+@font-face {
+  font-family: "PFHandbookPro Italic";
+  src: url(../fonts/PFHandbookPro-Italic.ttf) format("truetype");
+}
+@font-face {
+  font-family: "PFHandbookPro MedItalic";
+  src: url(../fonts/PFHandbookPro-MedItalic.ttf) format("truetype");
+}
+@font-face {
+  font-family: "PFHandbookPro Medium";
+  src: url(../fonts/PFHandbookPro-Medium.ttf) format("truetype");
+}
+@font-face {
+  font-family: "PFHandbookPro Regular";
+  src: url(../fonts/PFHandbookPro-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "PFHandbookPro Thin";
+  src: url(../fonts/PFHandbookPro-Thin.ttf) format("truetype");
+}
+@font-face {
+  font-family: "PFHandbookPro ThinItalic";
+  src: url(../fonts/PFHandbookPro-ThinItalic.ttf) format("truetype");
+}
+body {
+  margin: 0;
+  background: #fff;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: "PFHandbookPro Bold";
+  color: #295b89;
+}
+
+body:before {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  height: 50%;
+  background: url(../img/bg-top.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  content: "";
+}
+
+body:after {
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  height: 50%;
+  background: url(../img/bg-bottom.png);
+  background-size: 100%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.container-fluid {
+  position: relative;
+  z-index: 99;
+}
+
+.logo {
+  position: fixed;
+  z-index: 99;
+  top: 115px;
+  left: 66px;
+}
+#gotov {
+  /* width: 600px; */
+  height: 335px;
+  justify-content: center;
+  align-items: center;
+  border: 8px solid #295b89;
+  box-sizing: border-box;
+  display: inline-flex;
+  border-radius: 30px;
+  /* font-size: 330px; */
+}
+.line-text {
+  font-size: 70px;
+}
+.end-numbers div span {
+  width: 270px;
+  height: 270px;
+  border-radius: 50%;
+  background: #f4ac1a;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 150px;
+}
+.top-texts {
+  margin-top: 270px;
+}
