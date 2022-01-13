@@ -1,6 +1,8 @@
 const { app, BrowserWindow } = require("electron");
 const path = require("path");
 const ElectronPreferences = require("electron-preferences");
+const AutoLaunch = require("auto-launch");
+require("update-electron-app")();
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
 if (require("electron-squirrel-startup")) {
@@ -61,6 +63,14 @@ const preferences = new ElectronPreferences({
 });
 
 const createWindow = () => {
+  let autoLaunch = new AutoLaunch({
+    name: "Chopar Tablo",
+    path: app.getPath("exe"),
+  });
+  autoLaunch.isEnabled().then((isEnabled) => {
+    if (!isEnabled) autoLaunch.enable();
+  });
+
   // Create the browser window.
   const mainWindow = new BrowserWindow({
     width: 800,

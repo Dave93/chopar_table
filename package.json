@@ -1,9 +1,13 @@
 {
   "name": "tablo",
   "productName": "tablo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "My Electron application description",
   "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Dave93/chopar_table.git"
+  },
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
@@ -45,9 +49,9 @@
     }
   },
   "dependencies": {
+    "auto-launch": "^5.0.5",
     "electron-preferences": "^2.5.0",
-    "electron-squirrel-startup": "^1.0.0",
-    "update-electron-app": "^2.0.1"
+    "electron-squirrel-startup": "^1.0.0"
   },
   "devDependencies": {
     "@electron-forge/cli": "^6.0.0-beta.61",
